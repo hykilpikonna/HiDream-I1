@@ -66,7 +66,7 @@ def load_models(model_type: str):
     
     pipe = HiDreamImagePipeline.from_pretrained(
         config["path"],
-        scheduler=FlowUniPCMultistepScheduler(num_train_timesteps=1000, shift=config["shift"], use_dynamic_shifting=False),
+        scheduler=config["scheduler"](num_train_timesteps=1000, shift=config["shift"], use_dynamic_shifting=False),
         tokenizer_4=tokenizer_4,
         text_encoder_4=text_encoder_4,
         torch_dtype=torch.bfloat16,
