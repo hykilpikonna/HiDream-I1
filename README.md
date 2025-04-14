@@ -31,13 +31,14 @@ We offer both the full version and distilled models. The parameter size are the 
 Simply run:
 
 ```
+pip install -r requirements.txt
 pip install hdi1 --no-build-isolation
 ```
 
 > [!NOTE]
 > It's recommended that you start a new python environment for this package to avoid dependency conflicts.  
 > To do that, you can use `conda create -n hdi1 python=3.12` and then `conda activate hdi1`.  
-> Or you can use `python3 -m venv venv` and then `source venv/bin/activate` on Linux or `venv\Scripts\activate` on Windows.
+> Or you can use `python3 -m venv venv` and then `source venv/bin/activate` on Linux or `venv\Scripts\activate.bat` in Windows command prompt (`venv\Scripts\activate.ps1` in Windows Powershell).
 
 ### Command Line Interface
 
